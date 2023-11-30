@@ -1,13 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Burak ÜSTÜN - Web Programcılığı Testi</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <title>Bilişim Testi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            margin: 50px;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            color: #666;
+            text-align: left;
+        }
+
+        input,
+        select {
+            width: calc(100% - 16px);
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            width: auto;
+            margin-right: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: #fff;
+            cursor: pointer;
+        }
+    </style>
 </head>
+
 <body>
-    6
+
+    <h2>Bilişim Testi</h2>
+
+    <form action="test_submission_handler.php" method="post">
+        <label for="q1">1. HTML ne anlama gelir?</label>
+        <input type="text" id="q1" name="q1" required>
+
+        <label for="q2">2. CSS hangi özellikleri düzenler?</label>
+        <select id="q2" name="q2" required>
+            <option value="">Seçiniz</option>
+            <option value="appearance">Görünüm</option>
+            <option value="layout">Düzen</option>
+            <option value="behavior">Davranış</option>
+            <option value="color">Renk</option>
+        </select>
+
+        <label for="q3">3. JavaScript hangi tür bir dilidir?</label>
+        <input type="radio" id="q3_1" name="q3" value="programming" required>
+        Programlama Dili
+        <input type="radio" id="q3_2" name="q3" value="markup">
+        İşaretleme Dili
+
+        <label for="q4">4. "CPU" kısaltması neyi ifade eder?</label>
+        <input type="text" id="q4" name="q4" required>
+
+        <label for="q5">5. Bir IP adresi kaç bittir?</label>
+        <input type="number" id="q5" name="q5" required>
+
+        <label for="q6">6. SQL nedir?</label>
+        <textarea id="q6" name="q6" rows="4" required></textarea>
+
+        <label for="q7">7. Python hangi tür bir programlama dilidir?</label>
+        <input type="checkbox" id="q7_1" name="q7" value="procedural">
+        Prosedürel
+        <input type="checkbox" id="q7_2" name="q7" value="object-oriented">
+        Nesne Yönelimli
+
+        <label for="q8">8. Linux işletim sistemi hangi türdür?</label>
+        <input type="radio" id="q8_1" name="q8" value="open-source" required>
+        Açık Kaynak
+        <input type="radio" id="q8_2" name="q8" value="closed-source">
+        Kapalı Kaynak
+
+        <label for="q9">9. DNS'nin açılımı nedir?</label>
+        <input type="text" id="q9" name="q9" required>
+
+        <label for="q10">10. Git nedir ve ne işe yarar?</label>
+        <input type="text" id="q10" name="q10" required>
+
+        <input type="submit" value="Testi Gönder">
+    </form>
+
 </body>
+
 </html>

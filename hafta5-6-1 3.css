@@ -1,0 +1,24 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+}
+
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 50%;
+    border: 1px solid rgb(223, 14, 14);
+}
+
+th,
+td {
+    border: 1px solid rgb(22, 63, 197);
+    padding: 8px;
+}
+
+th {
+    background-color: #333;
+    color: #ffffff;
+}
