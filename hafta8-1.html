@@ -1,11 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Div İmaj Efektleri</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .shape {
+            width: 100px;
+            height: 100px;
+            margin: 20px;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+        }
+
+        /* Yukarı-aşağı hareket */
+        .up-down {
+            background-color: blue;
+            animation-name: upDown;
+        }
+
+        /* Büyüyüp küçülen ve rengi değişen */
+        .grow-shrink {
+            background-color: green;
+            animation-name: growShrink, changeColor;
+        }
+
+        /* Transparanlık */
+        .transparency {
+            background-color: red;
+            animation-name: transparency;
+        }
+
+        /* Sağa sola hareket */
+        .left-right {
+            background-color: orange;
+            animation-name: leftRight;
+        }
+
+        /* Dönme */
+        .rotate {
+            background-color: purple;
+            animation-name: rotate;
+        }
+
+        @keyframes upDown {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(100px);
+            }
+        }
+
+        @keyframes growShrink {
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.5);
+            }
+        }
+
+        @keyframes changeColor {
+
+            0%,
+            100% {
+                background-color: green;
+            }
+
+            50% {
+                background-color: red;
+            }
+        }
+
+        @keyframes transparency {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.5;
+            }
+        }
+
+        @keyframes leftRight {
+
+            0%,
+            100% {
+                transform: translateX(0);
+            }
+
+            50% {
+                transform: translateX(100px);
+            }
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
 </head>
+
 <body>
-   10 
+    <div class="container">
+        <div class="shape up-down"></div>
+        <div class="shape grow-shrink"></div>
+        <div class="shape transparency"></div>
+        <div class="shape left-right"></div>
+        <div class="shape rotate"></div>
+    </div>
 </body>
+
 </html>

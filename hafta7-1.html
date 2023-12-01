@@ -1,11 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Grid Layout</title>
+    <style>
+        .grid-cont {
+            gap: 10px;
+            display: grid;
+            grid-template-columns: repeat(3, 170px);
+        }
+
+        .grid-it {
+            text-align: center;
+            padding: 50px;
+        }
+
+        .grid-it.AD {
+            grid-column: span 3;
+            background-color: rgb(81, 225, 65);
+            border: 2px solid navy;
+        }
+
+        .grid-it.BCD {
+            grid-column: span 1;
+            grid-row: span 2;
+            border: 2px solid black;
+        }
+
+        .grid-it.E {
+            grid-column: span 2;
+            grid-row: span 2;
+            background-color: rgb(255, 8, 0);
+            border: 2px solid rgb(32, 178, 218);
+        }
+
+        .grid-it.F {
+            grid-column: span 1;
+            grid-row: span 2;
+            background-color: plum;
+            border: 2px solid purple;
+        }
+    </style>
 </head>
+
 <body>
-    9
+    <h1>Grid Layout</h1>
+    <center>
+        <div class="grid-cont">
+            <div class="grid-it AD">A</div>
+            <div class="grid-it BCD">B</div>
+            <div class="grid-it BCD">C</div>
+            <div class="grid-it BCD">D</div>
+            <div class="grid-it E">E</div>
+            <div class="grid-it F">F</div>
+            <div class="grid-it AD">G</div>
+        </div>
+    </center>
 </body>
+
 </html>
