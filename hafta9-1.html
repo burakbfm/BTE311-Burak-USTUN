@@ -3,30 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="hafta9-1.css">
-  <title>JavaScript Random Arka Plan ve Görsel Gizleme</title>
+  <link rel="stylesheet" href="styles.css">
+  <title>Random Page</title>
 </head>
 <body>
 
 <div class="container">
-
-  <button onclick="toggleImage1()">Göster/Gizle</button>
-  <img id="image1" src="APOLLO.png" alt="Image 1">
-
+  <button onclick="changeBackgroundColor()">Arka Planı Değiştir</button>
+  <div class="images">
+    <div class="image-container">
+      <img id="image1" src="image1.jpg" alt="Image 1">
+      <div class="buttons">
+        <button onclick="toggleImage(1)">Göster</button>
+        <button onclick="toggleImage(1)">Gizle</button>
+      </div>
+    </div>
+    <div class="image-container">
+      <img id="image2" src="image2.jpg" alt="Image 2">
+      <div class="buttons">
+        <button onclick="toggleImage(2)">Göster</button>
+        <button onclick="toggleImage(2)">Gizle</button>
+      </div>
+    </div>
+    <div class="image-container">
+      <img id="image3" src="image3.jpg" alt="Image 3">
+      <div class="buttons">
+        <button onclick="toggleImage(3)">Göster</button>
+        <button onclick="toggleImage(3)">Gizle</button>
+      </div>
+    </div>
+  </div>
 </div>
 
-<div class="container">
-
-  <button onclick="toggleImage2()">Göster/Gizle</button>
-  <img id="image2" src="ARTEMİS.png" alt="Image 2">
-
-</div>
-
-<div class="container">
-  <button onclick="toggleImage3()">Göster/Gizle</button>
-
-  <img id="image3" src="ATHENA.png" alt="Image 3">
-</div>
-<script src="hafta9-1.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
